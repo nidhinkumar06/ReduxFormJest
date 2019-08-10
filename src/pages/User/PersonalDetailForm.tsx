@@ -102,7 +102,7 @@ export const PersonalDetailForm: React.FC<Props & InjectedFormProps<{}, Props>> 
               type="submit"
               style={{ marginRight: '10px' }}
             >
-              Next &nbsp;
+              Next&nbsp;
               <FaChevronRight className="button-padding" size={18} />
             </Button>
           </div>

@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountDetailForm /> should match the snapshot 1`] = `
+<form
+  noValidate={true}
+  onSubmit={[MockFunction]}
+>
+  <Col
+    sm="12"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Card
+      className="card-border"
+      tag="div"
+    >
+      <CardBody
+        tag="div"
+      >
+        <FormGroup
+          row={true}
+          tag="div"
+        >
+          <Col
+            lg="6"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Account Number *"
+              name="useraccountNumber"
+              normalize={[Function]}
+              placeHolder="Enter Account Number"
+              type="text"
+            />
+          </Col>
+          <Col
+            lg="6"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Bank Name *"
+              name="userBankName"
+              normalize={[Function]}
+              placeHolder="Enter Bank Name"
+              type="text"
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup
+          row={true}
+          tag="div"
+        >
+          <Col
+            lg="12"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Bank Address *"
+              name="userbankAddress"
+              placeHolder="Enter Bank Address"
+              type="textarea"
+            />
+          </Col>
+        </FormGroup>
+      </CardBody>
+      <div
+        style={
+          Object {
+            "paddingBottom": 30,
+          }
+        }
+      >
+        <Button
+          color="success"
+          style={
+            Object {
+              "float": "left",
+              "marginLeft": "20px",
+            }
+          }
+          tag="button"
+        >
+          <FaChevronLeft
+            className="button-padding"
+            size={18}
+          />
+            Previous
+        </Button>
+        <Button
+          color="success"
+          style={
+            Object {
+              "float": "right",
+              "marginRight": "20px",
+            }
+          }
+          tag="button"
+          type="submit"
+        >
+            
+          <span>
+            Save
+          </span>
+          <FaRegSave
+            className="button-padding"
+            size={18}
+          />
+        </Button>
+      </div>
+    </Card>
+  </Col>
+</form>
+`;

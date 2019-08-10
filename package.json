@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "24.0.16",
     "@types/lodash": "^4.14.136",
     "@types/node": "12.6.9",
     "@types/react": "16.8.24",
@@ -37,7 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -54,5 +53,46 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/setup/test-shim.js",
+      "<rootDir>/tests/setup/test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "preset": "ts-jest/presets/js-with-ts",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/setup/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/tests/setup/styleMock.js"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.(ts|tsx|js)"
+    ],
+    "collectCoverage": true
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.16",
+    "@types/react-test-renderer": "^16.8.3",
+    "@types/redux-mock-store": "^1.0.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6",
+    "redux-mock-store": "^1.5.3",
+    "ts-jest": "^24.0.2"
   }
 }

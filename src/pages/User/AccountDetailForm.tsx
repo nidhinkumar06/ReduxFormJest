@@ -9,10 +9,10 @@ import { accountNumber, name } from '../../lib/normalize';
 
 interface Props {
   previousPage: any;
-  isLoading: boolean;
+  isloading: boolean;
 }
 export const AccountDetailForm: React.FC<Props & InjectedFormProps<{}, Props>> = (props: any) => {
-  const { isLoading, handleSubmit, previousPage, pristine, submitting } = props;
+  const { isloading, handleSubmit, previousPage, pristine, submitting } = props;
   return (
     <form onSubmit={handleSubmit} noValidate={true}>
       <Col sm="12">
@@ -56,7 +56,7 @@ export const AccountDetailForm: React.FC<Props & InjectedFormProps<{}, Props>> =
             <Button
               color="success"
               onClick={previousPage}
-              disabled={isLoading}
+              disabled={isloading}
               style={{ marginLeft: '20px', float: "left" }}
             >
               <FaChevronLeft className="button-padding" size={18} />
@@ -64,15 +64,15 @@ export const AccountDetailForm: React.FC<Props & InjectedFormProps<{}, Props>> =
             </Button>
             <Button
               color="success"
-              isLoading={isLoading}
+              isloading={isloading}
               type="submit"
               style={{ marginRight: '20px', float: "right" }}
               disabled={pristine || submitting}
             >
-              {isLoading && <span>Saving</span>} &nbsp;
-              {isLoading && <FaSpinner className="icon-spin" />}
-              {!isLoading && <span>Save</span>}
-              {!isLoading && <FaRegSave className="button-padding" size={18} />}
+              {isloading && <span>Saving</span>} &nbsp;
+              {isloading && <FaSpinner className="icon-spin" />}
+              {!isloading && <span>Save</span>}
+              {!isloading && <FaRegSave className="button-padding" size={18} />}
             </Button>
           </div>
         </Card>

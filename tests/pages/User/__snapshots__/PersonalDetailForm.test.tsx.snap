@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PersonalDetailForm /> should match the snapshot 1`] = `
+<form
+  noValidate={true}
+  onSubmit={[MockFunction]}
+>
+  <Col
+    sm="12"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Card
+      className="card-border"
+      tag="div"
+    >
+      <CardBody
+        tag="div"
+      >
+        <FormGroup
+          row={true}
+          tag="div"
+        >
+          <Col
+            lg="12"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Name *"
+              name="userName"
+              normalize={[Function]}
+              placeHolder="Enter User Name"
+              type="text"
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup
+          row={true}
+          tag="div"
+        >
+          <Col
+            lg="6"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="DOB *"
+              maxDate="2019-08-10"
+              name="userDOB"
+              onChange={[Function]}
+              placeHolder="Enter Date of Birth"
+              type="date"
+            />
+          </Col>
+          <Col
+            lg="6"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Age *"
+              name="userAge"
+              placeHolder="Enter User Age"
+              type="text"
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup
+          row={true}
+          tag="div"
+        >
+          <Col
+            lg="6"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              datas={
+                Array [
+                  Object {
+                    "label": "Male",
+                    "value": "male",
+                  },
+                  Object {
+                    "label": "Female",
+                    "value": "female",
+                  },
+                  Object {
+                    "label": "Other",
+                    "value": "other",
+                  },
+                ]
+              }
+              label="Gender *"
+              name="userGender"
+              placeHolder="Select Gender"
+              type="text"
+            />
+          </Col>
+          <Col
+            lg="6"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Mobile No *"
+              name="userMobileNumber"
+              normalize={[Function]}
+              placeHolder="Enter Mobile Number"
+              type="text"
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup
+          row={true}
+          tag="div"
+        >
+          <Col
+            lg="12"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <Field
+              component={[Function]}
+              label="Address *"
+              name="userAddress"
+              placeHolder="Enter Address"
+              type="textarea"
+            />
+          </Col>
+        </FormGroup>
+      </CardBody>
+      <div
+        style={
+          Object {
+            "paddingBottom": 30,
+          }
+        }
+      >
+        <Button
+          className="float-right"
+          color="success"
+          style={
+            Object {
+              "marginRight": "10px",
+            }
+          }
+          tag="button"
+          type="submit"
+        >
+          Next 
+          <FaChevronRight
+            className="button-padding"
+            size={18}
+          />
+        </Button>
+      </div>
+    </Card>
+  </Col>
+</form>
+`;
